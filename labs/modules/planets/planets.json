@@ -1,0 +1,10 @@
+{
+  "mercury": 2440,
+  "venus":  6051,
+  "earth":  6378,
+  "mars":   3397,
+  "jupiter": 71492,
+  "saturn": 60268,
+  "uranus": 25559,
+  "neptune": 24764
+}
