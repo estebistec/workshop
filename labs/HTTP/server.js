@@ -15,8 +15,17 @@ function logRequest(request, response) {
 
 var server = http.createServer(function(request, response) {
     response.statusCode = 200;
-    response.write('Hello, world!');
-    response.end();
+
+    fs.readFile('index.html', function(err, data) {
+      if (!err) {
+        response.write(data);
+        response.end();
+      }
+      else {
+        response.write("Could not load file!");
+        response.end();
+      }
+    });
     logRequest(request, response);
 });
 
